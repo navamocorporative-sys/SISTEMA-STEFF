@@ -1,0 +1,221 @@
+// Plantillas predeterminadas (basadas en los documentos originales).
+// Se usan si la base de datos aún no tiene plantillas.
+import type { ContractTemplateContent, GuideContent } from './types'
+
+export const DEFAULT_GUIDE: GuideContent = {
+  "work_type": "",
+  "format": "",
+  "photo_qty": "",
+  "video_qty": "",
+  "delivery_text": "Enviar enlace. Enviar selección de fotos y material completo.",
+  "delivery_platform": "TransferNow",
+  "delivery_link": "https://www.transfernow.net/es",
+  "guide_note": "Esta guía puede variar dependiendo del lugar del evento.",
+  "column_label": "Planos, ángulos y movimientos de cámara",
+  "sections": [
+    {
+      "title": "Lugar / Misa",
+      "rows": [
+        {
+          "item": "Arreglos en la iglesia",
+          "note": "",
+          "spec": "Plano: DS, MCU\nÁngulos: Normal, picado, contrapicado\nMC: Libre"
+        },
+        {
+          "item": "Entrada de festejado/a/s",
+          "note": "",
+          "spec": "Plano: FS, MCU\nÁngulos: Normal\nMC: Libre"
+        },
+        {
+          "item": "Festejado/a/s parado / sentado",
+          "note": "",
+          "spec": "Plano: FS, MCU\nÁngulos: Normal\nMC: Libre"
+        },
+        {
+          "item": "Familia en la iglesia",
+          "note": "",
+          "spec": "Plano: FS, MCU\nÁngulos: Normal\nMC: Libre"
+        },
+        {
+          "item": "Momentos importantes de la misa",
+          "note": "",
+          "spec": "Plano: FS, MCU\nÁngulos: Normal\nMC: Libre"
+        },
+        {
+          "item": "Ofrenda a la virgen",
+          "note": "",
+          "spec": "Plano: FS, MCU\nÁngulos: Normal\nMC: Libre"
+        },
+        {
+          "item": "Familia, amigos y festejado/a/s al terminar la misa dentro de la iglesia",
+          "note": "",
+          "spec": "Plano: FS, MCU\nÁngulos: Normal\nMC: Libre"
+        }
+      ]
+    },
+    {
+      "title": "Lugar / Evento",
+      "rows": [
+        {
+          "item": "Decoración",
+          "note": "",
+          "spec": "Plano: DS, MCU\nÁngulos: Normal, picado, contrapicado\nMC: Libre"
+        },
+        {
+          "item": "Centro de mesa",
+          "note": "",
+          "spec": "Plano: DS, MCU\nÁngulos: Normal, picado, contrapicado\nMC: Libre"
+        },
+        {
+          "item": "Mesa principal (pastel, flores y detalles de la mesa)",
+          "note": "",
+          "spec": "Plano: DS, MCU\nÁngulos: Normal\nMC: Libre"
+        },
+        {
+          "item": "Pastel",
+          "note": "",
+          "spec": "Plano: DS, MCU\nÁngulos: Normal\nMC: Libre"
+        },
+        {
+          "item": "Invitados en las mesas (Saludando / Video) (Sonriendo / Foto)",
+          "note": "Nota: fotografía y video al mismo tiempo",
+          "spec": "Plano: MS\nÁngulos: Normal\nMC: Fijo (Libre)"
+        },
+        {
+          "item": "Invitados bailando",
+          "note": "Nota: grabar las canciones completas sin corte (video). Al menos 6 canciones con las personas bailando.",
+          "spec": "Plano: FS\nÁngulos: Normal\nMC: Fijo (Libre)"
+        },
+        {
+          "item": "Invitados (plano general)",
+          "note": "",
+          "spec": "Plano: LS\nÁngulos: Normal\nMC: Fijo (Libre)"
+        },
+        {
+          "item": "Grupo / DJ",
+          "note": "",
+          "spec": "Plano: FS\nÁngulos: Normal\nMC: Fijo (Libre)"
+        },
+        {
+          "item": "Familia y amigos en las mesas y en la mesa principal con festejado/a/s",
+          "note": "",
+          "spec": "Plano: MCU\nÁngulos: Normal\nMC: Fijo (Libre)"
+        },
+        {
+          "item": "Momentos especiales de familia, amigos y festejado/a/s",
+          "note": "",
+          "spec": "Plano: Libre\nÁngulos: Libre\nMC: Libre"
+        },
+        {
+          "item": "Tomas a familiares y amigos por separado enviando un mensaje a la(s) persona(s) festejada(s)",
+          "note": "Nota: grabar a la persona enviando el mensaje (grabar audio con el celular).",
+          "spec": "Plano: Primer plano\nÁngulos: Normal\nMC: Fijo (Libre)"
+        }
+      ]
+    }
+  ],
+  "include_family": true,
+  "final_note": "NOTA: NOS RESERVAMOS EL DERECHO DE COMPARTIR EXCLUSIVAMENTE ESTA INFORMACIÓN SOLO A NUESTROS COLABORADORES. EN CASO DE COMPARTIR ESTA INFORMACIÓN SIN AUTORIZACIÓN, PUEDE SER CAUSA DE NO EFECTUAR LOS PAGOS CORRESPONDIENTES A QUIEN EJECUTE ESTE PROYECTO."
+}
+
+export const DEFAULT_CONTRACT: ContractTemplateContent = {
+  "title": "C O N T R A T O",
+  "city_line": "Hermosillo, Sonora a:",
+  "representative": "Omar Moreno",
+  "show_logo": true,
+  "blocks": [
+    {
+      "id": "b-datos",
+      "type": "datos",
+      "enabled": true,
+      "title": "Datos del cliente"
+    },
+    {
+      "id": "b-paquete",
+      "type": "paquete",
+      "enabled": true,
+      "title": "Paquete"
+    },
+    {
+      "id": "b-horarios",
+      "type": "horarios",
+      "enabled": true,
+      "title": "Horarios"
+    },
+    {
+      "id": "b-pagos",
+      "type": "plan_pagos",
+      "enabled": true,
+      "title": "PLAN DE PAGOS"
+    },
+    {
+      "id": "b-entrega",
+      "type": "tiempo_entrega",
+      "enabled": true,
+      "title": "TIEMPO DE ENTREGA",
+      "options": [
+        {
+          "name": "NORMAL",
+          "time": "1 - 2 meses",
+          "price": "Incluido en paquete"
+        },
+        {
+          "name": "EXPRESS 1",
+          "time": "7 días",
+          "price": "$700"
+        },
+        {
+          "name": "EXPRESS 2",
+          "time": "2-3 días",
+          "price": "$1,000"
+        }
+      ]
+    },
+    {
+      "id": "b-notas",
+      "type": "notas",
+      "enabled": true,
+      "title": "Notas",
+      "items": [
+        "Es responsabilidad del cliente descargar el material entregado en el momento que se indique. El enlace de descarga tiene una vigencia de 2 días después de la entrega. Después del tiempo mencionado el enlace expirará; por lo tanto, deberá descargar el material enviado lo antes posible.",
+        "En el caso de requerir el material de forma express, solicitarlo antes del evento y/o al momento de realizar la captura del material."
+      ]
+    },
+    {
+      "id": "b-firmas1",
+      "type": "firmas",
+      "enabled": true,
+      "title": "Firmas"
+    },
+    {
+      "id": "b-clausulas",
+      "type": "clausulas",
+      "enabled": true,
+      "title": "CLÁUSULAS",
+      "items": [
+        "Nosotros nos comprometemos a estar presentes en los lugares y horas establecidas en este contrato.",
+        "El cliente se compromete a estar puntual en el horario establecido en el contrato; de lo contrario, acepta las acciones y/o los costos que genere su impuntualidad.",
+        "Nosotros nos comprometemos a tener el trabajo para selección del cliente en un plazo de 2 a 3 meses en foto y de 3 a 4 meses en video (si es contratado el servicio de video).",
+        "El cliente deberá tener cubierto el total del importe de este contrato 15 días antes del evento, en los plazos establecidos, o de acuerdo con la negociación al momento de realizar el contrato.",
+        "En el caso de modificación de la fecha del evento o del mismo evento, se deberá dar aviso aproximadamente un mes antes de lo establecido para hacer los ajustes, según la agenda disponible del fotógrafo. Las modificaciones podrán generar cargos y, en el caso de cancelaciones, no habrá devolución del dinero, sino que este importe se cubrirá, según sea el caso, con nuestros servicios fotográficos.",
+        "Si se presentara algún percance, pleito o revuelta en el evento por parte de los invitados del cliente y en ese caso el equipo fotográfico y/o de video resulta perjudicado o con daños, el cliente será responsable de cubrir los gastos que esto genere.",
+        "En caso de que algún teléfono, iPhone, iPad o cualquier dispositivo obstruya la captura de foto/video en momentos esenciales del evento, se hará todo lo posible por evadir dichos dispositivos; pero si se presentan personas insistentes, no será responsabilidad del fotógrafo / videógrafo perder ese momento.",
+        "El cliente está confiando plenamente en la capacidad y experiencia del fotógrafo para desenvolverse profesionalmente, por lo que se entregará en óptima calidad la foto y/o video (en caso de ser contratado) de acuerdo con el estilo propio del fotógrafo.",
+        "En caso de ocurrir algún imprevisto de fuerza mayor en el que el fotógrafo se vea imposibilitado para cumplir con las coberturas anteriormente mencionadas, este se compromete a enviar una suplencia que cubra los servicios contratados por el cliente.",
+        "El cliente deberá hacer su selección de fotos en un plazo no mayor a 2 meses después de la entrega del material en digital. De lo contrario, se extenderá a un plazo no fijo el tiempo de entrega del material por parte del fotógrafo.",
+        "No se aplican reembolsos.",
+        "Ya finiquitado el trabajo, no se aplica postedición de foto y/o video.",
+        "Se entregará solamente material seleccionado por el fotógrafo (sin excepción).",
+        "El material extra tendrá un costo adicional al que aparece en este contrato. El costo puede variar dependiendo de lo que solicite el cliente. Se aplican restricciones.",
+        "Después de la entrega del material no es obligatorio reenviar el trabajo concluido. Queda a disposición de las entregas pendientes después de que se solicite el reenvío del material."
+      ],
+      "new_page": true
+    },
+    {
+      "id": "b-firmas2",
+      "type": "firmas",
+      "enabled": true,
+      "title": "Firmas"
+    }
+  ]
+}
